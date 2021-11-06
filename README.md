@@ -17,7 +17,7 @@ Power devices which don't support PoE and fine-adjust the received voltage at th
 ## Goals
 
 * ✅ Small footprint PCB
-* ✅ Max budget of 12 Euros
+* ✅ Max budget of 15 Euros
 * ✅ Support up to 60V of input
 * ✅ Selectable output voltage
 * ✅ Selectable PoE class
@@ -34,11 +34,11 @@ Power devices which don't support PoE and fine-adjust the received voltage at th
 | TPS2379 | 802.3af PD Interface | Mouser | 2.35€ | 2.35€ |
 | SI7454FDP-T1-RE3 | N-Channel Mosfet | Mouser | 0.69€ | 0.69€ |
 | MB1S-TP | Bridge Rectifier | Mouser | 0.26€ | 0.52€ |
-| SS-90000-00 | Barebones RJ45 | Mouser | 0.47€ | 0.47€ |
+| RJLSE4118101 | RJ45 8P8C Shielded | Mouser | 0.91€ | 1.82€ |
 | PRT-10811 | 5.5mm DC Jack | Mouser | 0.81€ | 0.81€ |
 | LM2596HV | Regulator & aux. Components | AliExpress | 1.12€ | 1.12€ |
 
-Current total: 10.23€, not **yet** including: PCB, resistors, capacitors, leds.
+Current total: 11.58€, not **yet** including: PCB, resistors, capacitors, leds.
 
 ## Introduction
 
