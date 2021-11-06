@@ -7,12 +7,16 @@ Power devices which don't support PoE and fine-adjust the received voltage at th
 ## Table of Contents
 
 * [Goals](#goals)
-* [Main Parts](#main-parts)
 * [Introduction](#introduction)
   * [802\.3af (PoE)](#8023af-poe)
   * [802\.3at (PoE\+)](#8023at-poe)
   * [802\.3bt (Hi\-PoE, PoE\+\+)](#8023bt-hi-poe-poe)
 * [Concept](#concept)
+* [Features](#features)
+  * [Ports](#ports)
+  * [Settings](#settings)
+  * [Status LEDs](#status-leds)
+* [Parts](#parts)
 
 ## Goals
 
@@ -22,23 +26,9 @@ Power devices which don't support PoE and fine-adjust the received voltage at th
 * ✅ Selectable output voltage
 * ✅ Selectable PoE class
 * ✅ Highest possible current throughput
-* ✅ Indication of active type 1/2
+* ✅ Indication of active type 2
 * ✅ DC Output Jack
 * ✅ Proper centertap-termination
-
-## Main Parts
-
-| Part | Description | Shop | Price/Pice | Total |
-|:-----|:------------|:-----|:-----------|:------|
-| H6062NL | Signal Transformer | Mouser | 4.27€ | 4.27€ |
-| TPS2379 | 802.3af PD Interface | Mouser | 2.35€ | 2.35€ |
-| SI7454FDP-T1-RE3 | N-Channel Mosfet | Mouser | 0.69€ | 0.69€ |
-| MB1S-TP | Bridge Rectifier | Mouser | 0.26€ | 0.52€ |
-| RJLSE4118101 | RJ45 8P8C Shielded | Mouser | 0.91€ | 1.82€ |
-| PRT-10811 | 5.5mm DC Jack | Mouser | 0.81€ | 0.81€ |
-| LM2596HV | Regulator & aux. Components | AliExpress | 1.12€ | 1.12€ |
-
-Current total: 11.58€, not **yet** including: PCB, resistors, capacitors, leds.
 
 ## Introduction
 
@@ -76,3 +66,63 @@ The main component is represented by the [H6062NL](https://eu.mouser.com/Product
 In order to support detection, classification, inrush-current limiting and short-circuit protection, I decided on the [TPS2379](https://www.ti.com/lit/ds/symlink/tps2379.pdf?ts=1636211997743&ref_url=https%253A%252F%252Fwww.google.com%252F). It supports up to *1A* of operating current, which should be plenty, and can even be extended using an external mosfet.
 
 To tap the available power from either one of the two pairs, and to handle reverse-polarity situations, two full bridge rectifiers are inserted directly inbetween the transformers and the control-IC. The output voltage will then be fed through a buck-converter, to easily regulate it. [LM2596HV](http://hmsemi.com/downfile/LM2596HV.PDF) seems to be a perfect fit for this job.
+
+## Features
+
+### Ports
+
+* Ethernet in (from PSE)
+* Ethernet out (to non-PD)
+* Standard DC-jack to supply power
+
+### Settings
+
+* 5 positions for class 0-4
+* Voltage regulation potentiometer
+
+### Status LEDs
+
+* Power available (Green)
+* Inrush current limiting (Yellow)
+* Type 2 active (Yellow)
+* Pair 1 & 2 hot (Red)
+* Pair 3 & 4 hot (Red)
+
+## Parts
+
+| Part | Description | Shop | Price/Pice | Amount | Total |
+|:-----|:------------|:-----|:-----------|:-------|:------|
+| **Integrated Circuits** |
+| H6062NL | Signal Transformer | Mouser | 4.27€ | 1 | 4.27€ |
+| TPS2379 | 802.3af PD Interface | Mouser | 2.35€ | 1 | 2.35€ |
+| MB1S-TP | Bridge Rectifier | Mouser | 0.26€ | 2 | 0.52€ |
+| LM2596HV | [Regulator & aux. Components](https://de.aliexpress.com/item/32916300929.html?spm=a2g0s.9042311.0.0.55414c4dqviJXF) | AliExpress | 1.12€ | 1 | 1.12€ |
+| BAS21LDYL | GP Diode | Mouser | 0.20€ | 2 | 0.40€ |
+| SI7454FDP-T1-RE3 | N-Channel Mosfet | Mouser | 0.69€ | 1 | 0.69€ |
+| **Connectors** |
+| RJLSE4118101 | RJ45 8P8C Shielded | Mouser | 0.91€ | 2 | 1.82€ |
+| PRT-10811 | 5.5mm DC Jack | Mouser | 0.81€ | 1 | 0.81€ |
+| **Status LEDs** |
+| RC0603FR-071K91L | 1.91k Ohm 0603 | Mouser | 0.008€ | 5 | 0.032€ |
+| 150060GS75000 | LED Green 0603 | Mouser | 0.12€ | 1 | 0.12€ |
+| 150060GS75000 | LED Yellow 0603 | Mouser | 0.12€ | 2 | 0.24€ |
+| 150060GS75000 | LED Red 0603 | Mouser | 0.12€ | 2 | 0.24€ |
+| **Filtering & Termination** |
+| RC0603FR-0775RL | 75 Ohm 0603 | Mouser | 0.006€ | 8 | 0.012€ |
+| CL10B103KO8NNNC | 10nF 0603 | Mouser | 0.011€ | 4 | 0.044€ |
+| C0805C104K8RACAUTO | 100nF 0805 | Mouser | 0.058€ | 1 | 0.058€ |
+| CL10C102JB8NNND | 1nF 0603 | Mouser | 0.016€ | 2 | 0.032€ |
+| **PoE Class (R_CLS)** |
+| RC0603FR-071K27L | 1.27k Ohm 0603 | Mouser | 0.008€ | 1 | 0.008€ |
+| CR0603-FX-2430ELF | 243 Ohm 0603 | Mouser | 0.016€ | 1 | 0.016€ |
+| ERJ-3EKF1370V | 137 Ohm 0603 | Mouser | 0.014€ | 2 | 0.014€ |
+| CR0603-FX-90R9ELF | 90.9 Ohm 0603 | Mouser | 0.013€ | 1 | 0.013€ |
+| CR0603-FX-63R4ELF | 63.4 Ohm 0603 | Mouser | 0.013€ | 1 | 0.013€ |
+| SX1100-A | Jumper Shunt | Mouser | 0.03€ | 1 | 0.03€ |
+| 54202-T0803AB01LF | Jumper Pins 2x5 | Mouser | 0.65€ | 1 | 0.65€ |
+| **R_DEN** |
+| RK73H1JTTDD2492F | 24.9k Ohm 0603 | Mouser | 0.01€ | 1 | 0.01€ |
+| **Miscellaneous** |
+| RK73B1JTTD204J | 200k Ohm 0603 | Mouser | 0.008€ | 1 | 0.008€ |
+
+Current total: 13.51€, not **yet** including: PCB material
