@@ -17,6 +17,7 @@ Power devices which don't support PoE and fine-adjust the received voltage at th
   * [Settings](#settings)
   * [Status LEDs](#status-leds)
 * [Parts](#parts)
+* [Prototyping](#prototyping)
 
 ## Goals
 
@@ -126,3 +127,17 @@ To tap the available power from either one of the two pairs, and to handle rever
 | RK73B1JTTD204J | 200k Ohm 0603 | Mouser | 0.008€ | 1 | 0.008€ |
 
 Current total: 13.51€, not **yet** including: PCB material
+
+## Prototyping
+
+07-12-2021:
+
+I wanted to check if I could extract power using only the transformer, like some people managed to do online, with no additional logic. After finding an old gigabit-capable router in my basement, I disassembled it and unsoldered one of it's internal transformators ([G4802CG](https://media.digikey.com/pdf/Data%20Sheets/Mentech%20PDFs/G4802CG.pdf)). I also tried one from a 100M model, which didn't work, because they've joined up the centertaps on neighboring coils. The pins were so small that a breakout-board was necessary. This was my test-setup:
+
+![Breakout-Board](img/breakout_board.jpg)
+
+On the left, the PSE is connected, where the power gets extracted, and on the right, it's my laptop (PD). I'm using a `Netgear GS305P`, and nope, it's not directly spitting out power without additional logic. I actually discovered that it pulses a few volts on all ports, no matter if something is connected or not. I guess that's where the PD would use load modulation to register itself and it's desired power-class. Now I'm waiting to receive my mouser-order to continue with this test-setup, until the first prototype is up and working, only then will I create a full PCB-layout.
+
+Just in case you're wondering, here's whats inside the IC, I think it looks wonderful:
+
+![Transformer Inside](img/transformer_inside.jpg)
