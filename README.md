@@ -68,6 +68,16 @@ In order to support detection, classification, inrush-current limiting and short
 
 To tap the available power from either one of the two pairs, and to handle reverse-polarity situations, two full bridge rectifiers are inserted directly inbetween the transformers and the control-IC. The output voltage will then be fed through a buck-converter, to easily regulate it. [LM2596HV](http://hmsemi.com/downfile/LM2596HV.PDF) seems to be a perfect fit for this job.
 
+### Detection
+
+The PSE constantly pulses a 4-point detection signal on the port in question, which starts out `LOW` and then rises `HIGH` two times. With the known voltage potential, and the measurable current draw, the PSE calculates the inner resistance of the connected PD. It has to `23.75kOhm < R < 26.25kOhm`, to be a valid PoE device.
+
+### Classification
+
+After passing detection, the PD has to specify it's desired power class to the PSE. The PSE sends signals between 14.5V and 20.5V, while the PD removes R_DET from the line and applies R_CLS, in series with a constant 2.5V regulator. This way, the PSE can accurately measure the current flowing through R_CLS, and thus determine the desired class.
+
+After completing both steps successfully, power is activated.
+
 ## Features
 
 ### Ports
