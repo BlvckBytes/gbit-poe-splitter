@@ -108,7 +108,6 @@ After completing both steps successfully, power is activated.
 | TPS2379 | 802.3af PD Interface | Mouser | 2.35€ | 1 | 2.35€ |
 | MB1S-TP | Bridge Rectifier | Mouser | 0.26€ | 2 | 0.52€ |
 | LM2596HV | [Regulator & aux. Components](https://de.aliexpress.com/item/32916300929.html?spm=a2g0s.9042311.0.0.55414c4dqviJXF) | AliExpress | 1.12€ | 1 | 1.12€ |
-| BAS21LDYL | GP Diode | Mouser | 0.20€ | 2 | 0.40€ |
 | SI7454FDP-T1-RE3 | N-Channel Mosfet | Mouser | 0.69€ | 1 | 0.69€ |
 | **Connectors** |
 | RJLSE4118101 | RJ45 8P8C Shielded | Mouser | 0.91€ | 2 | 1.82€ |
@@ -136,7 +135,7 @@ After completing both steps successfully, power is activated.
 | **Miscellaneous** |
 | RK73B1JTTD204J | 200k Ohm 0603 | Mouser | 0.008€ | 1 | 0.008€ |
 
-Current total: 13.51€, not **yet** including: PCB material
+Current total: 13.11€, not **yet** including: PCB material
 
 ## Prototyping
 
