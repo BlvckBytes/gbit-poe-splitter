@@ -150,3 +150,9 @@ On the left, the PSE is connected, where the power gets extracted, and on the ri
 Just in case you're wondering, here's whats inside the IC, I think it looks wonderful:
 
 ![Transformer Inside](img/transformer_inside.jpg)
+
+09-12-2021:
+
+Yesterday and today I finally created all missing footprints and symbols to create the first revision of the schematic. I tried to keep it organized through grouping by functional blocks, as you usually do. Still need to revise it, before I go into routing the board.
+
+![Current Schematic](img/curr_schem.png)
