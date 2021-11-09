@@ -157,3 +157,9 @@ Just in case you're wondering, here's whats inside the IC, I think it looks wond
 Yesterday and today I finally created all missing footprints and symbols to create the first revision of the schematic. I tried to keep it organized through grouping by functional blocks, as you usually do. Still need to revise it, before I go into routing the board.
 
 ![Current Schematic](img/curr_schem.png)
+
+Now that the schematic is done, I started on some small parts of routing. I kinda want to have the ethernet ports on one side of the board next to each other, and the DC jack vis-a-vis. The ethernet signal lines are basically just passed through the transformer, which should be done in a short and "bus-like" fashion.
+
+I'm quite happy with my current layout, since the power lines are now exposed at the right hand side, while the PD-side termination is on the left, where it fits nicely.
+
+![Partial Route 1](img/partial_route_1.png)
