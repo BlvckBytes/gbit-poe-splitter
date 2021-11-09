@@ -134,8 +134,9 @@ After completing both steps successfully, power is activated.
 | RK73H1JTTDD2492F | 24.9k Ohm 0603 | Mouser | 0.01€ | 1 | 0.01€ |
 | **Miscellaneous** |
 | RK73B1JTTD204J | 200k Ohm 0603 | Mouser | 0.008€ | 1 | 0.008€ |
+| GS2M-LTP | Rectifier Diode | Mouser | 0.28€ | 2 | 0.56€ |
 
-Current total: 13.11€, not **yet** including: PCB material
+Current total: 13.67€, not **yet** including: PCB material
 
 ## Prototyping
 
