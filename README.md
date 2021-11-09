@@ -163,3 +163,9 @@ Now that the schematic is done, I started on some small parts of routing. I kind
 I'm quite happy with my current layout, since the power lines are now exposed at the right hand side, while the PD-side termination is on the left, where it fits nicely.
 
 ![Partial Route 1](img/partial_route_1.png)
+
+To improve power delivering capabilities, I now increased all ethernet related traces up to the width of the port's pins. Since my configuration also allows four pair powering, the only thing I might need to change down the road would be the PoE interfacing chip.
+
+I'm planning to keep a GND-plane on top, and a PSE-Power-plane on the bottom, where I'm also going to squeeze in all components that are unrouted right now. This will be quite a challenge for me!
+
+![Partial Route 2](img/partial_route_2.png)
