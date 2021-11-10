@@ -192,3 +192,9 @@ Quite pleased with the result, although I still need to continuity-check it usin
 ![Result Top](img/result_top.jpg)
 
 ![Result Bottom](img/result_bottom.jpg)
+
+Thankfully I managed to only need through-holes for 6 vias and the DC jack. I hate drilling, it's extremely hard to pull off accurately on such a scale. The holes on both sides lined up perfectly tho, I'm extremely happy about that, in contrast to the riviting work. The rivets suck, but I measured their resistance, and it seems to work out at around 2 Ohm. I need to research this further to come up with a more professional solution. Also, note to self: Only rivet through full planes for power transmission, as the pad-ring gets partially cut off when drilling.
+
+![Rivets 1](img/rivets_1.jpg)
+
+![Rivets 2](img/rivets_2.jpg)
