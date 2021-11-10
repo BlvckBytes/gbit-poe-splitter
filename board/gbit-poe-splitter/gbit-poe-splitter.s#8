@@ -20605,7 +20605,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <connect gate="G$1" pin="P6" pad="P6"/>
 <connect gate="G$1" pin="P7" pad="P7"/>
 <connect gate="G$1" pin="P8" pad="P8"/>
-<connect gate="G$1" pin="S" pad="S1"/>
+<connect gate="G$1" pin="S" pad="S1 S2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -26112,6 +26112,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <schematic_group name="POE_CLS_JUMPERS"/>
 <schematic_group name="POE_CONTROLLER"/>
 <schematic_group name="STATUS_LEDS"/>
+<schematic_group name="VOLTAGE_REG"/>
 </groups>
 <parts>
 <part name="XMER1" library="H6062FNLT" deviceset="H6062FNLT" device=""/>
@@ -26195,9 +26196,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <attribute name="VALUE" x="-10.16" y="27.94" size="1.778" layer="96"/>
 <attribute name="NAME" x="-10.16" y="35.56" size="1.778" layer="95"/>
 </instance>
-<instance part="IC1" gate="A" x="53.34" y="96.52" smashed="yes" rot="MR0">
-<attribute name="NAME" x="53.34" y="107.34" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="53.34" y="78.74" size="1.778" layer="96" rot="MR0"/>
+<instance part="IC1" gate="A" x="55.88" y="78.74" smashed="yes" rot="MR0" grouprefs="VOLTAGE_REG">
+<attribute name="NAME" x="55.88" y="89.56" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="55.88" y="60.96" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="U$1" gate="G$1" x="-76.2" y="7.62" smashed="yes" rot="R270" grouprefs="POE_CONTROLLER">
 <attribute name="VALUE" x="-76.2" y="2.54" size="1.778" layer="96"/>
@@ -26381,30 +26382,30 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <instance part="GND10" gate="1" x="-83.82" y="5.08" smashed="yes" grouprefs="POE_CONTROLLER">
 <attribute name="VALUE" x="-86.36" y="2.54" size="1.778" layer="96"/>
 </instance>
-<instance part="C2" gate="G$1" x="96.52" y="93.98" smashed="yes">
-<attribute name="NAME" x="97.663" y="94.4626" size="1.778" layer="95"/>
-<attribute name="VALUE" x="97.663" y="89.3826" size="1.778" layer="96"/>
+<instance part="C2" gate="G$1" x="99.06" y="76.2" smashed="yes" grouprefs="VOLTAGE_REG">
+<attribute name="NAME" x="100.203" y="76.6826" size="1.778" layer="95"/>
+<attribute name="VALUE" x="100.203" y="71.6026" size="1.778" layer="96"/>
 </instance>
-<instance part="C11" gate="G$1" x="91.44" y="91.44" smashed="yes" rot="R180">
-<attribute name="NAME" x="89.916" y="91.059" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="89.916" y="96.139" size="1.778" layer="96" rot="R180"/>
+<instance part="C11" gate="G$1" x="93.98" y="73.66" smashed="yes" rot="R180" grouprefs="VOLTAGE_REG">
+<attribute name="NAME" x="92.456" y="73.279" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="92.456" y="78.359" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C12" gate="G$1" x="10.16" y="27.94" smashed="yes" grouprefs="POWER_ROUTER">
 <attribute name="NAME" x="11.303" y="28.4226" size="1.778" layer="95"/>
 <attribute name="VALUE" x="11.303" y="23.3426" size="1.778" layer="96"/>
 </instance>
-<instance part="D3" gate="G$1" x="71.12" y="91.44" smashed="yes" rot="R90">
-<attribute name="NAME" x="70.6374" y="93.98" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="73.4314" y="93.98" size="1.778" layer="96" rot="R90"/>
+<instance part="D3" gate="G$1" x="73.66" y="73.66" smashed="yes" rot="R90" grouprefs="VOLTAGE_REG">
+<attribute name="NAME" x="73.1774" y="76.2" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="75.9714" y="76.2" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U$2" gate="G$1" x="81.28" y="99.06" smashed="yes"/>
-<instance part="R20" gate="1" x="106.68" y="93.98" smashed="yes" rot="R180">
-<attribute name="NAME" x="112.649" y="97.79" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="110.49" y="97.79" size="1.778" layer="96" rot="R270"/>
+<instance part="U$2" gate="G$1" x="83.82" y="81.28" smashed="yes" grouprefs="VOLTAGE_REG"/>
+<instance part="R20" gate="1" x="109.22" y="76.2" smashed="yes" rot="R180" grouprefs="VOLTAGE_REG">
+<attribute name="NAME" x="115.189" y="80.01" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="113.03" y="80.01" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C1" gate="G$1" x="106.68" y="101.6" smashed="yes" rot="R180">
-<attribute name="NAME" x="105.156" y="101.219" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="105.156" y="106.299" size="1.778" layer="96" rot="R180"/>
+<instance part="C1" gate="G$1" x="109.22" y="83.82" smashed="yes" rot="R180" grouprefs="VOLTAGE_REG">
+<attribute name="NAME" x="107.696" y="83.439" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="107.696" y="88.519" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -26915,8 +26916,8 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="VIN"/>
-<label x="68.58" y="104.14" size="1.778" layer="95" xref="yes"/>
-<wire x1="63.5" y1="104.14" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
+<label x="71.12" y="86.36" size="1.778" layer="95" xref="yes" grouprefs="VOLTAGE_REG"/>
+<wire x1="66.04" y1="86.36" x2="71.12" y2="86.36" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -26992,17 +26993,17 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <segment>
 <pinref part="C2" gate="G$1" pin="+"/>
 <pinref part="C11" gate="G$1" pin="2"/>
-<wire x1="91.44" y1="96.52" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="99.06" x2="96.52" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="99.06" x2="96.52" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="99.06" x2="88.9" y2="99.06" width="0.1524" layer="91"/>
-<junction x="91.44" y="99.06"/>
-<wire x1="91.44" y1="99.06" x2="106.68" y2="99.06" width="0.1524" layer="91"/>
-<label x="109.22" y="99.06" size="1.778" layer="95" xref="yes"/>
+<wire x1="93.98" y1="78.74" x2="93.98" y2="81.28" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<wire x1="93.98" y1="81.28" x2="99.06" y2="81.28" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<wire x1="99.06" y1="81.28" x2="99.06" y2="78.74" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<wire x1="93.98" y1="81.28" x2="91.44" y2="81.28" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<junction x="93.98" y="81.28" grouprefs="VOLTAGE_REG"/>
+<wire x1="93.98" y1="81.28" x2="109.22" y2="81.28" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<label x="111.76" y="81.28" size="1.778" layer="95" xref="yes" grouprefs="VOLTAGE_REG"/>
 <pinref part="U$2" gate="G$1" pin="2"/>
 <pinref part="R20" gate="1" pin="A"/>
-<wire x1="106.68" y1="99.06" x2="109.22" y2="99.06" width="0.1524" layer="91"/>
-<junction x="106.68" y="99.06"/>
+<wire x1="109.22" y1="81.28" x2="111.76" y2="81.28" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<junction x="109.22" y="81.28" grouprefs="VOLTAGE_REG"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -27099,30 +27100,30 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="-"/>
-<wire x1="96.52" y1="88.9" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="71.12" x2="99.06" y2="68.58" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
 <pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="88.9" x2="91.44" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="86.36" x2="91.44" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="71.12" x2="93.98" y2="68.58" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<wire x1="99.06" y1="68.58" x2="93.98" y2="68.58" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
 <pinref part="D3" gate="G$1" pin="A"/>
-<wire x1="71.12" y1="88.9" x2="71.12" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="86.36" x2="91.44" y2="86.36" width="0.1524" layer="91"/>
-<junction x="91.44" y="86.36"/>
+<wire x1="73.66" y1="71.12" x2="73.66" y2="68.58" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<wire x1="73.66" y1="68.58" x2="93.98" y2="68.58" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<junction x="93.98" y="68.58" grouprefs="VOLTAGE_REG"/>
 <pinref part="IC1" gate="A" pin="GND"/>
-<wire x1="63.5" y1="93.98" x2="68.58" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="86.36" x2="68.58" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="86.36" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
-<junction x="71.12" y="86.36"/>
-<wire x1="96.52" y1="86.36" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
-<junction x="96.52" y="86.36"/>
-<label x="109.22" y="86.36" size="1.778" layer="95" xref="yes"/>
+<wire x1="66.04" y1="76.2" x2="71.12" y2="76.2" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<wire x1="71.12" y1="68.58" x2="71.12" y2="76.2" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<wire x1="73.66" y1="68.58" x2="71.12" y2="68.58" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<junction x="73.66" y="68.58" grouprefs="VOLTAGE_REG"/>
+<wire x1="99.06" y1="68.58" x2="109.22" y2="68.58" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<junction x="99.06" y="68.58" grouprefs="VOLTAGE_REG"/>
+<label x="111.76" y="68.58" size="1.778" layer="95" xref="yes" grouprefs="VOLTAGE_REG"/>
 <pinref part="IC1" gate="A" pin="ENABLE"/>
-<wire x1="106.68" y1="86.36" x2="109.22" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="83.82" x2="68.58" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="83.82" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
-<junction x="68.58" y="86.36"/>
+<wire x1="109.22" y1="68.58" x2="111.76" y2="68.58" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<wire x1="66.04" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<wire x1="71.12" y1="66.04" x2="71.12" y2="68.58" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<junction x="71.12" y="68.58" grouprefs="VOLTAGE_REG"/>
 <pinref part="R20" gate="1" pin="E"/>
-<wire x1="106.68" y1="88.9" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
-<junction x="106.68" y="86.36"/>
+<wire x1="109.22" y1="71.12" x2="109.22" y2="68.58" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<junction x="109.22" y="68.58" grouprefs="VOLTAGE_REG"/>
 </segment>
 </net>
 <net name="N$35" class="0">
@@ -27138,26 +27139,26 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <net name="N$34" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="OUTPUT"/>
-<wire x1="63.5" y1="99.06" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="81.28" x2="73.66" y2="81.28" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
 <pinref part="D3" gate="G$1" pin="C"/>
-<wire x1="71.12" y1="93.98" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="99.06" x2="73.66" y2="99.06" width="0.1524" layer="91"/>
-<junction x="71.12" y="99.06"/>
+<wire x1="73.66" y1="76.2" x2="73.66" y2="81.28" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<wire x1="73.66" y1="81.28" x2="76.2" y2="81.28" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<junction x="73.66" y="81.28" grouprefs="VOLTAGE_REG"/>
 <pinref part="U$2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="FB"/>
-<wire x1="63.5" y1="88.9" x2="66.04" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="88.9" x2="66.04" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="71.12" x2="68.58" y2="71.12" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<wire x1="68.58" y1="71.12" x2="68.58" y2="83.82" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
 <pinref part="R20" gate="1" pin="S"/>
-<wire x1="101.6" y1="93.98" x2="101.6" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="101.6" x2="66.04" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="76.2" x2="104.14" y2="83.82" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<wire x1="104.14" y1="83.82" x2="68.58" y2="83.82" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="106.68" y1="106.68" x2="101.6" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="106.68" x2="101.6" y2="101.6" width="0.1524" layer="91"/>
-<junction x="101.6" y="101.6"/>
+<wire x1="109.22" y1="88.9" x2="104.14" y2="88.9" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<wire x1="104.14" y1="88.9" x2="104.14" y2="83.82" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
+<junction x="104.14" y="83.82" grouprefs="VOLTAGE_REG"/>
 </segment>
 </net>
 </nets>

@@ -725,14 +725,14 @@
 <library name="TPS2379">
 <packages>
 <package name="DDA8_3P1X2P4_TEX">
-<smd name="1" x="-2.72415" y="1.905" dx="1.4605" dy="0.5334" layer="1"/>
-<smd name="2" x="-2.72415" y="0.635" dx="1.4605" dy="0.5334" layer="1"/>
-<smd name="3" x="-2.72415" y="-0.635" dx="1.4605" dy="0.5334" layer="1"/>
-<smd name="4" x="-2.72415" y="-1.905" dx="1.4605" dy="0.5334" layer="1"/>
-<smd name="5" x="2.72415" y="-1.905" dx="1.4605" dy="0.5334" layer="1"/>
-<smd name="6" x="2.72415" y="-0.635" dx="1.4605" dy="0.5334" layer="1"/>
-<smd name="7" x="2.72415" y="0.635" dx="1.4605" dy="0.5334" layer="1"/>
-<smd name="8" x="2.72415" y="1.905" dx="1.4605" dy="0.5334" layer="1"/>
+<smd name="1" x="-2.72415" y="1.905" dx="1.524" dy="0.762" layer="1"/>
+<smd name="2" x="-2.72415" y="0.635" dx="1.524" dy="0.762" layer="1"/>
+<smd name="3" x="-2.72415" y="-0.635" dx="1.524" dy="0.762" layer="1"/>
+<smd name="4" x="-2.72415" y="-1.905" dx="1.524" dy="0.762" layer="1"/>
+<smd name="5" x="2.72415" y="-1.905" dx="1.524" dy="0.762" layer="1"/>
+<smd name="6" x="2.72415" y="-0.635" dx="1.524" dy="0.762" layer="1"/>
+<smd name="7" x="2.72415" y="0.635" dx="1.524" dy="0.762" layer="1"/>
+<smd name="8" x="2.72415" y="1.905" dx="1.524" dy="0.762" layer="1"/>
 <smd name="EPAD" x="0" y="0" dx="2.4" dy="3.1" layer="1" cream="no"/>
 <wire x1="-1.9812" y1="1.6764" x2="-1.9812" y2="2.1336" width="0.1524" layer="51"/>
 <wire x1="-1.9812" y1="2.1336" x2="-3.0988" y2="2.1336" width="0.1524" layer="51"/>
@@ -792,160 +792,24 @@
 <text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 <text x="-1.7272" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
 </package>
-<package name="DDA8_3P1X2P4_TEX-M">
-<smd name="1" x="-2.82575" y="1.905" dx="1.6637" dy="0.5334" layer="1"/>
-<smd name="2" x="-2.82575" y="0.635" dx="1.6637" dy="0.5334" layer="1"/>
-<smd name="3" x="-2.82575" y="-0.635" dx="1.6637" dy="0.5334" layer="1"/>
-<smd name="4" x="-2.82575" y="-1.905" dx="1.6637" dy="0.5334" layer="1"/>
-<smd name="5" x="2.82575" y="-1.905" dx="1.6637" dy="0.5334" layer="1"/>
-<smd name="6" x="2.82575" y="-0.635" dx="1.6637" dy="0.5334" layer="1"/>
-<smd name="7" x="2.82575" y="0.635" dx="1.6637" dy="0.5334" layer="1"/>
-<smd name="8" x="2.82575" y="1.905" dx="1.6637" dy="0.5334" layer="1"/>
-<smd name="EPAD" x="0" y="0" dx="2.4" dy="3.1" layer="1" cream="no"/>
-<wire x1="-1.9812" y1="1.6764" x2="-2.0066" y2="2.1336" width="0.1524" layer="51"/>
-<wire x1="-2.0066" y1="2.1336" x2="-3.0988" y2="2.1336" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="2.1336" x2="-3.0988" y2="1.651" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="1.651" x2="-1.9812" y2="1.6764" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="0.4064" x2="-2.0066" y2="0.8636" width="0.1524" layer="51"/>
-<wire x1="-2.0066" y1="0.8636" x2="-3.0988" y2="0.8636" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="0.8636" x2="-3.0988" y2="0.381" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="0.381" x2="-1.9812" y2="0.4064" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="-0.8636" x2="-1.9812" y2="-0.4064" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="-0.4064" x2="-3.0988" y2="-0.4064" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="-0.4064" x2="-3.0988" y2="-0.889" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="-0.889" x2="-1.9812" y2="-0.8636" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="-2.1336" x2="-1.9812" y2="-1.6764" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="-1.6764" x2="-3.0988" y2="-1.6764" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="-1.6764" x2="-3.0988" y2="-2.159" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="-2.159" x2="-1.9812" y2="-2.1336" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="-1.6764" x2="2.0066" y2="-2.1336" width="0.1524" layer="51"/>
-<wire x1="2.0066" y1="-2.1336" x2="3.0988" y2="-2.1336" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="-2.1336" x2="3.0988" y2="-1.651" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="-1.651" x2="1.9812" y2="-1.6764" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="-0.4064" x2="1.9812" y2="-0.8636" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="-0.8636" x2="3.0988" y2="-0.8636" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="-0.8636" x2="3.0988" y2="-0.381" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="-0.381" x2="1.9812" y2="-0.4064" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="0.8636" x2="1.9812" y2="0.4064" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="0.4064" x2="3.0988" y2="0.4064" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="0.4064" x2="3.0988" y2="0.889" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="0.889" x2="1.9812" y2="0.8636" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="2.1336" x2="1.9812" y2="1.6764" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="1.6764" x2="3.0988" y2="1.6764" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="1.6764" x2="3.0988" y2="2.159" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="2.159" x2="1.9812" y2="2.1336" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="-2.4892" x2="1.9812" y2="-2.4892" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="-2.4892" x2="1.9812" y2="2.4892" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="2.4892" x2="0.3048" y2="2.4892" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="2.4892" x2="-0.3048" y2="2.4892" width="0.1524" layer="51"/>
-<wire x1="-0.3048" y1="2.4892" x2="-1.9812" y2="2.4892" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="2.4892" x2="-1.9812" y2="-2.4892" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="2.4892" x2="-0.3048" y2="2.4892" width="0.1524" layer="51" curve="-180"/>
-<text x="-2.1844" y="1.143" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
-<polygon width="0.0254" layer="31">
-<vertex x="-1.1" y="1.45"/>
-<vertex x="-1.1" y="0.1"/>
-<vertex x="1.1" y="0.1"/>
-<vertex x="1.1" y="1.45"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-1.1" y="-0.1"/>
-<vertex x="-1.1" y="-1.45"/>
-<vertex x="1.1" y="-1.45"/>
-<vertex x="1.1" y="-0.1"/>
-</polygon>
-<wire x1="-2.1336" y1="-2.6162" x2="2.1336" y2="-2.6162" width="0.1524" layer="21"/>
-<wire x1="2.1336" y1="2.6162" x2="-2.1336" y2="2.6162" width="0.1524" layer="21"/>
-<text x="-3.6576" y="2.3114" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
-<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
-<text x="-1.7272" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
-</package>
-<package name="DDA8_3P1X2P4_TEX-L">
-<smd name="1" x="-2.62255" y="1.905" dx="1.2573" dy="0.4826" layer="1"/>
-<smd name="2" x="-2.62255" y="0.635" dx="1.2573" dy="0.4826" layer="1"/>
-<smd name="3" x="-2.62255" y="-0.635" dx="1.2573" dy="0.4826" layer="1"/>
-<smd name="4" x="-2.62255" y="-1.905" dx="1.2573" dy="0.4826" layer="1"/>
-<smd name="5" x="2.62255" y="-1.905" dx="1.2573" dy="0.4826" layer="1"/>
-<smd name="6" x="2.62255" y="-0.635" dx="1.2573" dy="0.4826" layer="1"/>
-<smd name="7" x="2.62255" y="0.635" dx="1.2573" dy="0.4826" layer="1"/>
-<smd name="8" x="2.62255" y="1.905" dx="1.2573" dy="0.4826" layer="1"/>
-<smd name="EPAD" x="0" y="0" dx="2.4" dy="3.1" layer="1" cream="no"/>
-<wire x1="-1.9812" y1="1.6764" x2="-2.0066" y2="2.1336" width="0.1524" layer="51"/>
-<wire x1="-2.0066" y1="2.1336" x2="-3.0988" y2="2.1336" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="2.1336" x2="-3.0988" y2="1.651" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="1.651" x2="-1.9812" y2="1.6764" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="0.4064" x2="-2.0066" y2="0.8636" width="0.1524" layer="51"/>
-<wire x1="-2.0066" y1="0.8636" x2="-3.0988" y2="0.8636" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="0.8636" x2="-3.0988" y2="0.381" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="0.381" x2="-1.9812" y2="0.4064" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="-0.8636" x2="-1.9812" y2="-0.4064" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="-0.4064" x2="-3.0988" y2="-0.4064" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="-0.4064" x2="-3.0988" y2="-0.889" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="-0.889" x2="-1.9812" y2="-0.8636" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="-2.1336" x2="-1.9812" y2="-1.6764" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="-1.6764" x2="-3.0988" y2="-1.6764" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="-1.6764" x2="-3.0988" y2="-2.159" width="0.1524" layer="51"/>
-<wire x1="-3.0988" y1="-2.159" x2="-1.9812" y2="-2.1336" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="-1.6764" x2="2.0066" y2="-2.1336" width="0.1524" layer="51"/>
-<wire x1="2.0066" y1="-2.1336" x2="3.0988" y2="-2.1336" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="-2.1336" x2="3.0988" y2="-1.651" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="-1.651" x2="1.9812" y2="-1.6764" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="-0.4064" x2="1.9812" y2="-0.8636" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="-0.8636" x2="3.0988" y2="-0.8636" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="-0.8636" x2="3.0988" y2="-0.381" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="-0.381" x2="1.9812" y2="-0.4064" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="0.8636" x2="1.9812" y2="0.4064" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="0.4064" x2="3.0988" y2="0.4064" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="0.4064" x2="3.0988" y2="0.889" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="0.889" x2="1.9812" y2="0.8636" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="2.1336" x2="1.9812" y2="1.6764" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="1.6764" x2="3.0988" y2="1.6764" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="1.6764" x2="3.0988" y2="2.159" width="0.1524" layer="51"/>
-<wire x1="3.0988" y1="2.159" x2="1.9812" y2="2.1336" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="-2.4892" x2="1.9812" y2="-2.4892" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="-2.4892" x2="1.9812" y2="2.4892" width="0.1524" layer="51"/>
-<wire x1="1.9812" y1="2.4892" x2="0.3048" y2="2.4892" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="2.4892" x2="-0.3048" y2="2.4892" width="0.1524" layer="51"/>
-<wire x1="-0.3048" y1="2.4892" x2="-1.9812" y2="2.4892" width="0.1524" layer="51"/>
-<wire x1="-1.9812" y1="2.4892" x2="-1.9812" y2="-2.4892" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="2.4892" x2="-0.3048" y2="2.4892" width="0.1524" layer="51" curve="-180"/>
-<text x="-2.1844" y="1.143" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
-<polygon width="0.0254" layer="31">
-<vertex x="-1.1" y="1.45"/>
-<vertex x="-1.1" y="0.1"/>
-<vertex x="1.1" y="0.1"/>
-<vertex x="1.1" y="1.45"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-1.1" y="-0.1"/>
-<vertex x="-1.1" y="-1.45"/>
-<vertex x="1.1" y="-1.45"/>
-<vertex x="1.1" y="-0.1"/>
-</polygon>
-<wire x1="-2.1336" y1="-2.6162" x2="2.1336" y2="-2.6162" width="0.1524" layer="21"/>
-<wire x1="2.1336" y1="2.6162" x2="-2.1336" y2="2.6162" width="0.1524" layer="21"/>
-<text x="-3.4544" y="2.2606" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
-<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
-<text x="-1.7272" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
-</package>
 </packages>
 <symbols>
 <symbol name="TPS2379DDA">
-<pin name="VDD" x="2.54" y="0" length="middle" direction="pwr"/>
-<pin name="DEN" x="2.54" y="-2.54" length="middle"/>
-<pin name="CLS" x="2.54" y="-5.08" length="middle" direction="out"/>
-<pin name="VSS" x="2.54" y="-7.62" length="middle" direction="pwr"/>
-<pin name="RTN" x="53.34" y="-10.16" length="middle" direction="pas" rot="R180"/>
-<pin name="CDB" x="53.34" y="-7.62" length="middle" direction="out" rot="R180"/>
-<pin name="T2P" x="53.34" y="-5.08" length="middle" direction="out" rot="R180"/>
-<pin name="GATE" x="53.34" y="-2.54" length="middle" direction="out" rot="R180"/>
-<pin name="EPAD" x="53.34" y="0" length="middle" direction="pas" rot="R180"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="-15.24" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-15.24" x2="48.26" y2="-15.24" width="0.1524" layer="94"/>
-<wire x1="48.26" y1="-15.24" x2="48.26" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="48.26" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
-<text x="23.2156" y="9.1186" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
-<text x="22.5806" y="6.5786" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
+<pin name="VDD" x="-5.08" y="15.24" length="middle" direction="pwr"/>
+<pin name="DEN" x="-5.08" y="12.7" length="middle"/>
+<pin name="CLS" x="-5.08" y="10.16" length="middle" direction="out"/>
+<pin name="VSS" x="-5.08" y="7.62" length="middle" direction="pwr"/>
+<pin name="RTN" x="27.94" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="CDB" x="27.94" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="T2P" x="27.94" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="GATE" x="27.94" y="12.7" length="middle" direction="out" rot="R180"/>
+<pin name="EPAD" x="27.94" y="15.24" length="middle" direction="pas" rot="R180"/>
+<wire x1="0" y1="20.32" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="22.86" y2="0" width="0.1524" layer="94"/>
+<wire x1="22.86" y1="0" x2="22.86" y2="20.32" width="0.1524" layer="94"/>
+<wire x1="22.86" y1="20.32" x2="0" y2="20.32" width="0.1524" layer="94"/>
+<text x="2.8956" y="24.3586" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
+<text x="2.2606" y="21.8186" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -955,46 +819,6 @@
 </gates>
 <devices>
 <device name="" package="DDA8_3P1X2P4_TEX">
-<connects>
-<connect gate="A" pin="CDB" pad="6"/>
-<connect gate="A" pin="CLS" pad="3"/>
-<connect gate="A" pin="DEN" pad="2"/>
-<connect gate="A" pin="EPAD" pad="EPAD"/>
-<connect gate="A" pin="GATE" pad="8"/>
-<connect gate="A" pin="RTN" pad="5"/>
-<connect gate="A" pin="T2P" pad="7"/>
-<connect gate="A" pin="VDD" pad="1"/>
-<connect gate="A" pin="VSS" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="COPYRIGHT" value="Copyright (C) 2021 Ultra Librarian. All rights reserved." constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="TPS2379DDA" constant="no"/>
-<attribute name="MFR_NAME" value="Texas Instruments" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="DDA8_3P1X2P4_TEX-M" package="DDA8_3P1X2P4_TEX-M">
-<connects>
-<connect gate="A" pin="CDB" pad="6"/>
-<connect gate="A" pin="CLS" pad="3"/>
-<connect gate="A" pin="DEN" pad="2"/>
-<connect gate="A" pin="EPAD" pad="EPAD"/>
-<connect gate="A" pin="GATE" pad="8"/>
-<connect gate="A" pin="RTN" pad="5"/>
-<connect gate="A" pin="T2P" pad="7"/>
-<connect gate="A" pin="VDD" pad="1"/>
-<connect gate="A" pin="VSS" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="COPYRIGHT" value="Copyright (C) 2021 Ultra Librarian. All rights reserved." constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="TPS2379DDA" constant="no"/>
-<attribute name="MFR_NAME" value="Texas Instruments" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="DDA8_3P1X2P4_TEX-L" package="DDA8_3P1X2P4_TEX-L">
 <connects>
 <connect gate="A" pin="CDB" pad="6"/>
 <connect gate="A" pin="CLS" pad="3"/>
@@ -23084,6 +22908,62 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="TRIM_CA6_VSMD">
+<packages>
+<package name="TRIM_CA6_VSMD">
+<smd name="3" x="0" y="4.199990625" dx="2.159" dy="2.159" layer="1"/>
+<smd name="1" x="-2.150009375" y="-4.199990625" dx="2.159" dy="2.159" layer="1"/>
+<smd name="2" x="2.150009375" y="-4.199990625" dx="2.159" dy="2.159" layer="1"/>
+<wire x1="-3.81" y1="3.81" x2="3.81" y2="3.81" width="0.127" layer="21"/>
+<wire x1="3.81" y1="3.81" x2="3.81" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-3.81" x2="-3.81" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-3.81" x2="-3.81" y2="3.81" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="1.79605" width="0.127" layer="21"/>
+<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="R-TRIM">
+<wire x1="0.762" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="2.54" x2="-0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.651" y1="0" x2="-1.8796" y2="1.7526" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-2.54" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.286" y1="1.27" x2="-1.651" y2="2.413" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-0.508" x2="-3.048" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-0.508" x2="-2.032" y2="-1.524" width="0.1524" layer="94"/>
+<text x="-5.969" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="A" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="E" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TRIM_CA6_VSMD">
+<gates>
+<gate name="G$1" symbol="R-TRIM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TRIM_CA6_VSMD">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="2"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -23164,6 +23044,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="DO-214AC" package3d_urn="urn:adsk.eagle:package:43416/2"/>
 <part name="U$2" library="smd-inductors" deviceset="INDUCTOR-SMD" device="7070"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="10nF"/>
+<part name="U$3" library="TRIM_CA6_VSMD" deviceset="TRIM_CA6_VSMD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23173,8 +23054,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="XMER1" gate="A" x="-106.68" y="93.98" smashed="yes" grouprefs="ETHERNET_IO">
 <attribute name="VALUE" x="-94.2594" y="98.0186" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
-<instance part="U1" gate="A" x="-129.54" y="27.94" smashed="yes" grouprefs="POE_CONTROLLER">
-<attribute name="VALUE" x="-106.9594" y="34.5186" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<instance part="U1" gate="A" x="-104.14" y="12.7" smashed="yes" grouprefs="POE_CONTROLLER">
+<attribute name="VALUE" x="-81.5594" y="19.2786" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
 <instance part="B1" gate="G$1" x="-15.24" y="17.78" smashed="yes" grouprefs="POWER_ROUTER">
 <attribute name="VALUE" x="-10.16" y="12.7" size="1.778" layer="96"/>
@@ -23188,8 +23069,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="NAME" x="55.88" y="89.56" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="55.88" y="60.96" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="U$1" gate="G$1" x="-76.2" y="7.62" smashed="yes" rot="R270" grouprefs="POE_CONTROLLER">
-<attribute name="VALUE" x="-76.2" y="2.54" size="1.778" layer="96"/>
+<instance part="U$1" gate="G$1" x="-71.12" y="7.62" smashed="yes" rot="R270" grouprefs="POE_CONTROLLER">
+<attribute name="VALUE" x="-71.12" y="2.54" size="1.778" layer="96"/>
 </instance>
 <instance part="J1" gate="G$1" x="-12.7" y="114.3" smashed="yes" grouprefs="PWR_JACK">
 <attribute name="NAME" x="-20.32" y="119.38" size="1.778" layer="95"/>
@@ -23308,8 +23189,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="NAME" x="87.63" y="3.5814" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="87.63" y="8.382" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND5" gate="1" x="91.44" y="-7.62" smashed="yes" grouprefs="STATUS_LEDS">
-<attribute name="VALUE" x="88.9" y="-10.16" size="1.778" layer="96"/>
+<instance part="GND5" gate="1" x="91.44" y="2.54" smashed="yes" grouprefs="STATUS_LEDS">
+<attribute name="VALUE" x="88.9" y="0" size="1.778" layer="96"/>
 </instance>
 <instance part="R12" gate="G$1" x="83.82" y="20.32" smashed="yes" rot="R180" grouprefs="STATUS_LEDS">
 <attribute name="NAME" x="87.63" y="18.8214" size="1.778" layer="95" rot="R180"/>
@@ -23357,18 +23238,18 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="GND7" gate="1" x="17.78" y="63.5" smashed="yes" grouprefs="POE_CLS_JUMPERS">
 <attribute name="VALUE" x="15.24" y="60.96" size="1.778" layer="96"/>
 </instance>
-<instance part="R19" gate="G$1" x="-132.08" y="33.02" smashed="yes" rot="R270" grouprefs="POE_CONTROLLER">
-<attribute name="NAME" x="-130.5814" y="36.83" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="-135.382" y="36.83" size="1.778" layer="96" rot="R270"/>
+<instance part="R19" gate="G$1" x="-116.84" y="33.02" smashed="yes" rot="R270" grouprefs="POE_CONTROLLER">
+<attribute name="NAME" x="-115.3414" y="36.83" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="-120.142" y="36.83" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND8" gate="1" x="-129.54" y="15.24" smashed="yes" grouprefs="POE_CONTROLLER">
-<attribute name="VALUE" x="-132.08" y="12.7" size="1.778" layer="96"/>
+<instance part="GND8" gate="1" x="-114.3" y="15.24" smashed="yes" grouprefs="POE_CONTROLLER">
+<attribute name="VALUE" x="-116.84" y="12.7" size="1.778" layer="96"/>
 </instance>
 <instance part="GND9" gate="1" x="-71.12" y="35.56" smashed="yes" grouprefs="POE_CONTROLLER">
 <attribute name="VALUE" x="-73.66" y="33.02" size="1.778" layer="96"/>
 </instance>
-<instance part="GND10" gate="1" x="-83.82" y="5.08" smashed="yes" grouprefs="POE_CONTROLLER">
-<attribute name="VALUE" x="-86.36" y="2.54" size="1.778" layer="96"/>
+<instance part="GND10" gate="1" x="-78.74" y="5.08" smashed="yes" grouprefs="POE_CONTROLLER">
+<attribute name="VALUE" x="-81.28" y="2.54" size="1.778" layer="96"/>
 </instance>
 <instance part="C2" gate="G$1" x="99.06" y="76.2" smashed="yes" grouprefs="VOLTAGE_REG">
 <attribute name="NAME" x="100.203" y="76.6826" size="1.778" layer="95"/>
@@ -23390,6 +23271,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="C1" gate="G$1" x="109.22" y="83.82" smashed="yes" rot="R180" grouprefs="VOLTAGE_REG">
 <attribute name="NAME" x="107.696" y="83.439" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="107.696" y="88.519" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="U$3" gate="G$1" x="109.22" y="76.2" smashed="yes" rot="R180">
+<attribute name="NAME" x="115.189" y="80.01" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="113.03" y="80.01" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -23563,13 +23448,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="91.44" y1="12.7" x2="91.44" y2="5.08" width="0.1524" layer="91" grouprefs="STATUS_LEDS"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="91.44" y1="5.08" x2="88.9" y2="5.08" width="0.1524" layer="91" grouprefs="STATUS_LEDS"/>
-<wire x1="91.44" y1="5.08" x2="91.44" y2="-2.54" width="0.1524" layer="91" grouprefs="STATUS_LEDS"/>
 <junction x="91.44" y="5.08" grouprefs="STATUS_LEDS"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="-2.54" x2="91.44" y2="-5.08" width="0.1524" layer="91" grouprefs="STATUS_LEDS"/>
-<wire x1="88.9" y1="-2.54" x2="91.44" y2="-2.54" width="0.1524" layer="91" grouprefs="STATUS_LEDS"/>
-<junction x="91.44" y="-2.54" grouprefs="STATUS_LEDS"/>
 </segment>
 <segment>
 <pinref part="C10" gate="G$1" pin="2"/>
@@ -23604,8 +23484,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="VSS"/>
-<wire x1="-127" y1="20.32" x2="-129.54" y2="20.32" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
-<wire x1="-129.54" y1="20.32" x2="-129.54" y2="17.78" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<wire x1="-109.22" y1="20.32" x2="-114.3" y2="20.32" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<wire x1="-114.3" y1="20.32" x2="-114.3" y2="17.78" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -23617,7 +23497,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <segment>
 <pinref part="U$1" gate="G$1" pin="S"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="-81.28" y1="7.62" x2="-83.82" y2="7.62" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<wire x1="-76.2" y1="7.62" x2="-78.74" y2="7.62" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
 </segment>
 </net>
 <net name="PD1A" class="0">
@@ -23889,14 +23769,14 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </segment>
 <segment>
 <pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="-132.08" y1="38.1" x2="-132.08" y2="40.64" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
-<wire x1="-132.08" y1="40.64" x2="-129.54" y2="40.64" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<wire x1="-116.84" y1="38.1" x2="-116.84" y2="40.64" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<wire x1="-116.84" y1="40.64" x2="-114.3" y2="40.64" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
 <pinref part="U1" gate="A" pin="VDD"/>
-<wire x1="-127" y1="27.94" x2="-129.54" y2="27.94" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
-<wire x1="-129.54" y1="27.94" x2="-129.54" y2="40.64" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
-<wire x1="-132.08" y1="40.64" x2="-134.62" y2="40.64" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
-<junction x="-132.08" y="40.64" grouprefs="POE_CONTROLLER"/>
-<label x="-134.62" y="40.64" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="POE_CONTROLLER"/>
+<wire x1="-109.22" y1="27.94" x2="-114.3" y2="27.94" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<wire x1="-114.3" y1="27.94" x2="-114.3" y2="40.64" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<wire x1="-116.84" y1="40.64" x2="-119.38" y2="40.64" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<junction x="-116.84" y="40.64" grouprefs="POE_CONTROLLER"/>
+<label x="-119.38" y="40.64" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="POE_CONTROLLER"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="VIN"/>
@@ -23933,15 +23813,15 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="T2P"/>
-<wire x1="-76.2" y1="22.86" x2="-68.58" y2="22.86" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
-<label x="-68.58" y="22.86" size="1.778" layer="95" xref="yes" grouprefs="POE_CONTROLLER"/>
+<wire x1="-76.2" y1="22.86" x2="-63.5" y2="22.86" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<label x="-63.5" y="22.86" size="1.778" layer="95" xref="yes" grouprefs="POE_CONTROLLER"/>
 </segment>
 </net>
 <net name="CDB" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="CDB"/>
-<wire x1="-76.2" y1="20.32" x2="-68.58" y2="20.32" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
-<label x="-68.58" y="20.32" size="1.778" layer="95" xref="yes" grouprefs="POE_CONTROLLER"/>
+<wire x1="-76.2" y1="20.32" x2="-63.5" y2="20.32" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<label x="-63.5" y="20.32" size="1.778" layer="95" xref="yes" grouprefs="POE_CONTROLLER"/>
 </segment>
 <segment>
 <pinref part="INRUSH_LIMITED" gate="G$1" pin="C"/>
@@ -23988,6 +23868,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="109.22" y1="81.28" x2="111.76" y2="81.28" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
 <junction x="109.22" y="81.28" grouprefs="VOLTAGE_REG"/>
 <pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="U$3" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="R_CLS" class="0">
@@ -24016,8 +23897,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="CLS"/>
-<wire x1="-127" y1="22.86" x2="-132.08" y2="22.86" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
-<label x="-132.08" y="22.86" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="POE_CONTROLLER"/>
+<wire x1="-109.22" y1="22.86" x2="-116.84" y2="22.86" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<label x="-116.84" y="22.86" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="POE_CONTROLLER"/>
 </segment>
 </net>
 <net name="N$29" class="0">
@@ -24058,20 +23939,20 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <net name="N$36" class="0">
 <segment>
 <pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="-132.08" y1="27.94" x2="-132.08" y2="25.4" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<wire x1="-116.84" y1="27.94" x2="-116.84" y2="25.4" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
 <pinref part="U1" gate="A" pin="DEN"/>
-<wire x1="-132.08" y1="25.4" x2="-127" y2="25.4" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<wire x1="-116.84" y1="25.4" x2="-109.22" y2="25.4" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
 </segment>
 </net>
 <net name="RTN" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="RTN"/>
-<wire x1="-76.2" y1="17.78" x2="-68.58" y2="17.78" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
-<label x="-68.58" y="17.78" size="1.778" layer="95" xref="yes" grouprefs="POE_CONTROLLER"/>
+<wire x1="-76.2" y1="17.78" x2="-63.5" y2="17.78" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<label x="-63.5" y="17.78" size="1.778" layer="95" xref="yes" grouprefs="POE_CONTROLLER"/>
 <pinref part="U$1" gate="G$1" pin="D"/>
-<wire x1="-71.12" y1="7.62" x2="-68.58" y2="7.62" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
-<wire x1="-68.58" y1="7.62" x2="-68.58" y2="17.78" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
-<junction x="-68.58" y="17.78" grouprefs="POE_CONTROLLER"/>
+<wire x1="-66.04" y1="7.62" x2="-63.5" y2="7.62" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<wire x1="-63.5" y1="7.62" x2="-63.5" y2="17.78" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<junction x="-63.5" y="17.78" grouprefs="POE_CONTROLLER"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
@@ -24106,16 +23987,22 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <junction x="71.12" y="68.58" grouprefs="VOLTAGE_REG"/>
 <wire x1="109.22" y1="71.12" x2="109.22" y2="68.58" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
 <junction x="109.22" y="68.58" grouprefs="VOLTAGE_REG"/>
+<pinref part="U$3" gate="G$1" pin="E"/>
+</segment>
+<segment>
+<pinref part="R14" gate="G$1" pin="1"/>
+<wire x1="88.9" y1="-2.54" x2="91.44" y2="-2.54" width="0.1524" layer="91"/>
+<label x="91.44" y="-2.54" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$35" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="GATE"/>
-<wire x1="-76.2" y1="25.4" x2="-73.66" y2="25.4" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<wire x1="-76.2" y1="25.4" x2="-68.58" y2="25.4" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
 <pinref part="U$1" gate="G$1" pin="G"/>
-<wire x1="-76.2" y1="12.7" x2="-76.2" y2="15.24" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
-<wire x1="-76.2" y1="15.24" x2="-73.66" y2="15.24" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
-<wire x1="-73.66" y1="15.24" x2="-73.66" y2="25.4" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<wire x1="-71.12" y1="12.7" x2="-71.12" y2="15.24" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<wire x1="-71.12" y1="15.24" x2="-68.58" y2="15.24" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<wire x1="-68.58" y1="15.24" x2="-68.58" y2="25.4" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
 </segment>
 </net>
 <net name="N$34" class="0">
@@ -24140,6 +24027,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="109.22" y1="88.9" x2="104.14" y2="88.9" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
 <wire x1="104.14" y1="88.9" x2="104.14" y2="83.82" width="0.1524" layer="91" grouprefs="VOLTAGE_REG"/>
 <junction x="104.14" y="83.82" grouprefs="VOLTAGE_REG"/>
+<pinref part="U$3" gate="G$1" pin="S"/>
 </segment>
 </net>
 </nets>
