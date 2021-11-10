@@ -198,3 +198,9 @@ Thankfully I managed to only need through-holes for 6 vias and the DC jack. I ha
 ![Rivets 1](img/rivets_1.jpg)
 
 ![Rivets 2](img/rivets_2.jpg)
+
+Since I already received the parts of the regulator, I decided to solder them on today and test that part of the PCB real quick. Everything worked as expected.
+
+![Regulator Testing](img/regulator_test.jpg)
+
+I'm hoping to receive all other parts tomorrow morning, so I can finish this prototype off.
