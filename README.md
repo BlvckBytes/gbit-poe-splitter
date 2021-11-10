@@ -176,3 +176,19 @@ I'm planning to keep a GND-plane on top, and a PSE-Power-plane on the bottom, wh
 The board is completely routed out now, all airwires have been connected. Looks quite nice so far, I don't think that I can squeeze it any tighter without going down yet another rabbit-hole. IMO the pads of the PoE controller seem pretty slim, I will have to thicken them up in the library's footprint.
 
 ![Partial Route 3](img/partial_route_3.png)
+
+After correcting other small mistakes, the first physical prototype has been created.
+
+First, I created a double-sided "pouch" out of two overhead projector sheets, having the printed (toner) sides facing together. To block out most tiny holes, I overlayed two sheets of each side. My trusty `HP LaserJet 1200` did a great job again.
+
+![Exposing](img/exposing.jpg)
+
+After exposing, I developed the foto-resist and then etched away unmasked sections using [sodium persulfate](https://solectroshop.com/en/grabado-de-circuito/455-1kg-de-persulfato-de-sodio-pcb-etchant-para-circuitos-impresos.html).
+
+![Etching](img/etching.jpg)
+
+Quite pleased with the result, although I still need to continuity-check it using my multimeter.
+
+![Result Top](img/result_top.jpg)
+
+![Result Bottom](img/result_bottom.jpg)
