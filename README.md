@@ -135,12 +135,13 @@ After completing both steps successfully, power is activated.
 | **Miscellaneous** |
 | RK73B1JTTD204J | 200k Ohm 0603 | Mouser | 0.008€ | 1 | 0.008€ |
 | GS2M-LTP | Rectifier Diode | Mouser | 0.28€ | 2 | 0.56€ |
+| ACP 6-SMD 10K | SMD Trimmer | Reichelt AT | 0.30€ | 1 | 0.30€ |
 
-Current total: 13.67€, not **yet** including: PCB material
+Current total: 13.97€, not **yet** including: PCB material
 
 ## Prototyping
 
-07-12-2021:
+07.11.2021:
 
 I wanted to check if I could extract power using only the transformer, like some people managed to do online, with no additional logic. After finding an old gigabit-capable router in my basement, I disassembled it and unsoldered one of it's internal transformators ([G4802CG](https://media.digikey.com/pdf/Data%20Sheets/Mentech%20PDFs/G4802CG.pdf)). I also tried one from a 100M model, which didn't work, because they've joined up the centertaps on neighboring coils. The pins were so small that a breakout-board was necessary. This was my test-setup:
 
@@ -152,7 +153,7 @@ Just in case you're wondering, here's whats inside the IC, I think it looks wond
 
 ![Transformer Inside](img/transformer_inside.jpg)
 
-09-12-2021:
+09.11.2021:
 
 Yesterday and today I finally created all missing footprints and symbols to create the first revision of the schematic. I tried to keep it organized through grouping by functional blocks, as you usually do. Still need to revise it, before I go into routing the board.
 
@@ -169,3 +170,9 @@ To improve power delivering capabilities, I now increased all ethernet related t
 I'm planning to keep a GND-plane on top, and a PSE-Power-plane on the bottom, where I'm also going to squeeze in all components that are unrouted right now. This will be quite a challenge for me!
 
 ![Partial Route 2](img/partial_route_2.png)
+
+10.11.2021:
+
+The board is completely routed out now, all airwires have been connected. Looks quite nice so far, I don't think that I can squeeze it any tighter without going down yet another rabbit-hole. IMO the pads of the PoE controller seem pretty slim, I will have to thicken them up in the library's footprint.
+
+![Partial Route 3](img/partial_route_3.png)
