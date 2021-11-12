@@ -161,21 +161,11 @@ Yesterday and today I finally created all missing footprints and symbols to crea
 
 Now that the schematic is done, I started on some small parts of routing. I kinda want to have the ethernet ports on one side of the board next to each other, and the DC jack vis-a-vis. The ethernet signal lines are basically just passed through the transformer, which should be done in a short and "bus-like" fashion.
 
-I'm quite happy with my current layout, since the power lines are now exposed at the right hand side, while the PD-side termination is on the left, where it fits nicely.
-
-![Partial Route 1](img/partial_route_1.png)
-
-To improve power delivering capabilities, I now increased all ethernet related traces up to the width of the port's pins. Since my configuration also allows four pair powering, the only thing I might need to change down the road would be the PoE interfacing chip.
-
-I'm planning to keep a GND-plane on top, and a PSE-Power-plane on the bottom, where I'm also going to squeeze in all components that are unrouted right now. This will be quite a challenge for me!
-
-![Partial Route 2](img/partial_route_2.png)
-
 10.11.2021:
 
-The board is completely routed out now, all airwires have been connected. Looks quite nice so far, I don't think that I can squeeze it any tighter without going down yet another rabbit-hole. IMO the pads of the PoE controller seem pretty slim, I will have to thicken them up in the library's footprint.
+The board is completely routed out now, all airwires have been connected. Looks quite nice so far, I don't think that I can squeeze it any tighter without going down yet another rabbit-hole.
 
-![Partial Route 3](img/partial_route_3.png)
+![Routed Board](img/routed_board.png)
 
 After correcting other small mistakes, the first physical prototype has been created.
 
@@ -183,7 +173,7 @@ First, I created a double-sided "pouch" out of two overhead projector sheets, ha
 
 ![Exposing](img/exposing.jpg)
 
-After exposing, I developed the foto-resist and then etched away unmasked sections using [sodium persulfate](https://solectroshop.com/en/grabado-de-circuito/455-1kg-de-persulfato-de-sodio-pcb-etchant-para-circuitos-impresos.html).
+After exposing, I developed the foto-resist and then etched away unmasked sections using [sodium persulfate](https://solectroshop.com/en/grabado-de-circuito/455-1kg-de-persulfato-de-sodio-pcb-etchant-para-circuitos-impresos.html), while I heated the solution using the exhaust of my computer, ;).
 
 ![Etching](img/etching.jpg)
 
@@ -193,14 +183,4 @@ Quite pleased with the result, although I still need to continuity-check it usin
 
 ![Result Bottom](img/result_bottom.jpg)
 
-Thankfully I managed to only need through-holes for 6 vias and the DC jack. I hate drilling, it's extremely hard to pull off accurately on such a scale. The holes on both sides lined up perfectly tho, I'm extremely happy about that, in contrast to the riviting work. The rivets suck, but I measured their resistance, and it seems to work out at around 2 Ohm. I need to research this further to come up with a more professional solution. Also, note to self: Only rivet through full planes for power transmission, as the pad-ring gets partially cut off when drilling.
-
-![Rivets 1](img/rivets_1.jpg)
-
-![Rivets 2](img/rivets_2.jpg)
-
-Since I already received the parts of the regulator, I decided to solder them on today and test that part of the PCB real quick. Everything worked as expected.
-
-![Regulator Testing](img/regulator_test.jpg)
-
-I'm hoping to receive all other parts tomorrow morning, so I can finish this prototype off.
+Thankfully I managed to only need through-holes for 6 vias and the DC jack. I hate drilling, it's extremely hard to pull off accurately on such a scale. The holes on both sides lined up perfectly tho, I'm extremely happy about that.
