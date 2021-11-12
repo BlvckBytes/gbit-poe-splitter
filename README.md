@@ -184,3 +184,9 @@ Quite pleased with the result, although I still need to continuity-check it usin
 ![Result Bottom](img/result_bottom.jpg)
 
 Thankfully I managed to only need through-holes for 6 vias and the DC jack. I hate drilling, it's extremely hard to pull off accurately on such a scale. The holes on both sides lined up perfectly tho, I'm extremely happy about that.
+
+The rivets also worked out okay-ish this time, since I'm going easier on them with the tool. It's still far from perfect, but I think it gets the job done.
+
+![Rivets 1](img/rivets_1.jpg)
+
+![Rivets 2](img/rivets_2.jpg)
