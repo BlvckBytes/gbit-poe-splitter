@@ -18,6 +18,7 @@ Power devices which don't support PoE and fine-adjust the received voltage at th
   * [Status LEDs](#status-leds)
 * [Parts](#parts)
 * [Prototyping](#prototyping)
+  * [Summary](#summary)
 
 ## Goals
 
@@ -196,3 +197,16 @@ The rivets also worked out okay-ish this time, since I'm going easier on them wi
 After soldering all top-layer components, I tested the board for gbit-ethernet passthrough and low power pulse extraction (as it currently is without the controller IC), and everything works as expected.
 
 ![Soldered Top](img/soldered_top.jpg)
+
+### Summary
+
+There have been many things I learned from the first prototype, as this project definitely has it's stumbling blocks...
+
+![Soldered Bottom](img/soldered_bottom.jpg)
+
+1. The pair-indicator LEDs cannot be directly connected, as they change the resistive reading of the PSE, which therefore cannot act properly. Instead of wiring them to ground, I need to connect them to the PoE-IC's return pin.
+2. Same issue as with the LEDs occurrs with the input smoothing cap. Also needs ground as return.
+3. The external mosfet's package is extremely cumbersome for DIY, change that.
+4. LEDs need a higher resistance, as 1.9kOhm just doesn't cut it. They almost burn at 40+V.
+
+Everything else seems to be okay so far, just that with a small load of - for example - 1kOhm, the PSE disconnects power when the current-draw drops below around 10mA. Would be great if there was a fallback load, so that power regulation is possible down to a few volts.
