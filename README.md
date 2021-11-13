@@ -190,3 +190,9 @@ The rivets also worked out okay-ish this time, since I'm going easier on them wi
 ![Rivets 1](img/rivets_1.jpg)
 
 ![Rivets 2](img/rivets_2.jpg)
+
+13.11.2021:
+
+After soldering all top-layer components, I tested the board for gbit-ethernet passthrough and low power pulse extraction (as it currently is without the controller IC), and everything works as expected.
+
+![Soldered Top](img/soldered_top.jpg)
