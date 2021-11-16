@@ -287,14 +287,10 @@ UsedLibrary="/Users/blvckbytes/Documents/EAGLE/libraries/pwr_board.lbr"
 UsedLibrary="/Users/blvckbytes/Documents/EAGLE/libraries/smd-inductors.lbr"
 
 [Win_1]
-Type="Control Panel"
-Number=0
-
-[Win_2]
 Type="Schematic Editor"
 Number=1
 File="gbit-poe-splitter.sch"
-View="-210.505 55.0745 -168.84 77.4495"
+View="-197.649 -25.933 17.3332 89.517"
 WireWidths=" 0.0762 0.1016 0.127 0.15 0.2 0.2032 0.254 0.3048 0.4064 0.508 0.6096 0.8128 1.016 1.27 2.54 0.1524"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.55 0.65 0.7 0.75 0.8 0.85 0.9 1 0.6"
@@ -310,7 +306,7 @@ DimensionExtWidths=" 0.127 0.254 0.1 0.13 0.26 0"
 DimensionExtLengths=" 1.27 2.54 1 2 3 0"
 DimensionExtOffsets=" 1.27 2.54 1 2 3 0"
 SmdSizes=" 0.3048 0.1524 0.4064 0.2032 0.6096 0.3048 0.8128 0.4064 1.016 0.508 1.27 0.6604 1.4224 0.7112 1.6764 0.8128 1.778 0.9144 1.9304 0.9652 2.1844 1.0668 2.54 1.27 3.81 1.9304 5.08 2.54 6.4516 3.2512 1.27 0.635"
-WireBend=4
+WireBend=0
 WireBendSet=31
 WireCap=1
 MiterStyle=1
@@ -333,15 +329,19 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
-Views=" 1: -210.505 55.0745 -168.84 77.4495"
+Views=" 1: -197.649 -25.933 17.3332 89.517"
 Sheet="1"
+
+[Win_2]
+Type="Control Panel"
+Number=0
 
 [Win_3]
 Type="Board Editor"
 Number=2
 File="gbit-poe-splitter.brd"
-View="12.0256 12.6129 30.514 23.3288"
-WireWidths=" 30.8102 0.635 0.889 0.508 0.381 0.1778 1.524 1.143 0.762 1.27 2.54 0.254 0.2032 1.016 0.3302 0.3048"
+View="-11.4414 8.09565 68.0554 46.4934"
+WireWidths=" 30.8102 0.635 0.889 0.508 0.381 0.1778 1.524 1.143 1.27 2.54 0.3048 0.254 0.2032 0.762 0.3302 1.016"
 PadDiameters=" 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 1.05 1.3 0.85 0.55 1.651 0.3302 0.9 1 0"
 PadDrills=" 0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.55 0.65 0.7 0.75 0.8 0.85 0.9 1 0.6"
 ViaDiameters=" 0.7 0.75 0.8 0.95 1.1 1.15 1.2 1.05 1.3 0.85 0.55 1.651 0.3302 0.9 1 0"
@@ -378,7 +378,7 @@ SwapLevel=0
 ArcDirection=0
 AddLevel=2
 PadsSameType=0
-Layer=1
+Layer=16
 
 [Desktop]
 Screen="2560 1440"

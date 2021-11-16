@@ -22921,6 +22921,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="10nF"/>
 <part name="U$3" library="TRIM_CA6_VSMD" deviceset="TRIM_CA6_VSMD" device=""/>
 <part name="J3" library="con-jack" library_urn="urn:adsk.eagle:library:154" deviceset="DCJ0303" device="" package3d_urn="urn:adsk.eagle:package:7493/1"/>
+<part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="0R"/>
 </parts>
 <sheets>
 <sheet>
@@ -23100,9 +23101,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="GND7" gate="1" x="17.78" y="63.5" smashed="yes" grouprefs="POE_CLS_JUMPERS">
 <attribute name="VALUE" x="15.24" y="60.96" size="1.778" layer="96"/>
 </instance>
-<instance part="R19" gate="G$1" x="-116.84" y="33.02" smashed="yes" rot="R270" grouprefs="POE_CONTROLLER">
-<attribute name="NAME" x="-115.3414" y="36.83" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="-120.142" y="36.83" size="1.778" layer="96" rot="R270"/>
+<instance part="R19" gate="G$1" x="-114.3" y="33.02" smashed="yes" rot="R270" grouprefs="POE_CONTROLLER">
+<attribute name="NAME" x="-112.8014" y="36.83" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="-117.602" y="36.83" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND8" gate="1" x="-114.3" y="15.24" smashed="yes" grouprefs="POE_CONTROLLER">
 <attribute name="VALUE" x="-116.84" y="12.7" size="1.778" layer="96"/>
@@ -23141,6 +23142,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="J3" gate="G$1" x="-17.78" y="109.22" smashed="yes" grouprefs="PWR_JACK">
 <attribute name="NAME" x="-20.32" y="113.03" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-20.32" y="102.87" size="1.778" layer="96"/>
+</instance>
+<instance part="R20" gate="G$1" x="-116.84" y="43.18" smashed="yes" rot="R180">
+<attribute name="NAME" x="-113.03" y="41.6814" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-113.03" y="46.482" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -23485,15 +23490,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <junction x="91.44" y="27.94" grouprefs="STATUS_LEDS"/>
 </segment>
 <segment>
-<pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="-116.84" y1="38.1" x2="-116.84" y2="40.64" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
-<wire x1="-116.84" y1="40.64" x2="-114.3" y2="40.64" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
-<pinref part="U1" gate="A" pin="VDD"/>
-<wire x1="-109.22" y1="27.94" x2="-114.3" y2="27.94" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
-<wire x1="-114.3" y1="27.94" x2="-114.3" y2="40.64" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
-<wire x1="-116.84" y1="40.64" x2="-119.38" y2="40.64" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
-<junction x="-116.84" y="40.64" grouprefs="POE_CONTROLLER"/>
-<label x="-119.38" y="40.64" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="POE_CONTROLLER"/>
+<wire x1="-121.92" y1="43.18" x2="-124.46" y2="43.18" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<label x="-124.46" y="43.18" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="POE_CONTROLLER"/>
+<pinref part="R20" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="VIN"/>
@@ -23656,9 +23655,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <net name="N$36" class="0">
 <segment>
 <pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="-116.84" y1="27.94" x2="-116.84" y2="25.4" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<wire x1="-114.3" y1="27.94" x2="-114.3" y2="25.4" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
 <pinref part="U1" gate="A" pin="DEN"/>
-<wire x1="-116.84" y1="25.4" x2="-109.22" y2="25.4" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
+<wire x1="-114.3" y1="25.4" x2="-109.22" y2="25.4" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
 </segment>
 </net>
 <net name="RTN" class="0">
@@ -23870,6 +23869,18 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="XMER1" gate="A" pin="9"/>
 <pinref part="ETH-OUT" gate="G$1" pin="BROWN_F"/>
 <wire x1="-114.3" y1="73.66" x2="-139.7" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="U1" gate="A" pin="VDD"/>
+<wire x1="-109.22" y1="27.94" x2="-111.76" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="-111.76" y1="38.1" x2="-114.3" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-111.76" y1="27.94" x2="-111.76" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="R20" gate="G$1" pin="1"/>
+<wire x1="-111.76" y1="43.18" x2="-111.76" y2="38.1" width="0.1524" layer="91"/>
+<junction x="-111.76" y="38.1"/>
 </segment>
 </net>
 </nets>

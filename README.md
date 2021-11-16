@@ -210,3 +210,9 @@ There have been many things I learned from the first prototype, as this project 
 4. LEDs need a higher resistance, as 1.9kOhm just doesn't cut it. They almost burn at 40+V.
 
 Everything else seems to be okay so far, just that with a small load of - for example - 1kOhm, the PSE disconnects power when the current-draw drops below around 10mA. Would be great if there was a fallback load, so that power regulation is possible down to a few volts.
+
+16.11.2021:
+
+After taking a short break from this project, I now fixed the issues within my layout and managed to squeeze things even tighter, shaving off a few more millimeters of length. The only thing I'm still ponder about is stable voltage regulation without a load.
+
+![Routed Board](img/routed_board_2.png)

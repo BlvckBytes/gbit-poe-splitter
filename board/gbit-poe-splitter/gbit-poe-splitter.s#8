@@ -22878,7 +22878,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="ETH-OUT" library="RJLSE-4X1XX-01" deviceset="RJLSE-4X1XX-01" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="1nF"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="1nF"/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="1nF"/>
@@ -22982,12 +22981,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="GND2" gate="1" x="-58.42" y="63.5" smashed="yes" grouprefs="ETHERNET_IO">
 <attribute name="VALUE" x="-60.96" y="60.96" size="1.778" layer="96"/>
 </instance>
-<instance part="C3" gate="G$1" x="-213.36" y="63.5" smashed="yes" grouprefs="TERMINATION">
-<attribute name="NAME" x="-211.836" y="63.881" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-211.836" y="58.801" size="1.778" layer="96"/>
-</instance>
-<instance part="GND3" gate="1" x="-213.36" y="53.34" smashed="yes" grouprefs="TERMINATION">
-<attribute name="VALUE" x="-215.9" y="50.8" size="1.778" layer="96"/>
+<instance part="GND3" gate="1" x="-208.28" y="58.42" smashed="yes" grouprefs="TERMINATION">
+<attribute name="VALUE" x="-210.82" y="55.88" size="1.778" layer="96"/>
 </instance>
 <instance part="C4" gate="G$1" x="-203.2" y="71.12" smashed="yes" rot="R90" grouprefs="TERMINATION">
 <attribute name="NAME" x="-203.581" y="72.644" size="1.778" layer="95" rot="R90"/>
@@ -23185,11 +23180,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="-213.36" y1="55.88" x2="-213.36" y2="58.42" width="0.1524" layer="91" grouprefs="TERMINATION"/>
-</segment>
-<segment>
 <pinref part="B2" gate="G$1" pin="-"/>
 <wire x1="-20.32" y1="33.02" x2="-22.86" y2="33.02" width="0.1524" layer="91" grouprefs="POWER_ROUTER"/>
 <wire x1="-22.86" y1="33.02" x2="-22.86" y2="17.78" width="0.1524" layer="91" grouprefs="POWER_ROUTER"/>
@@ -23256,6 +23246,16 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="-76.2" y1="7.62" x2="-78.74" y2="7.62" width="0.1524" layer="91" grouprefs="POE_CONTROLLER"/>
 </segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="-205.74" y1="71.12" x2="-208.28" y2="71.12" width="0.1524" layer="91" grouprefs="TERMINATION"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="-208.28" y1="71.12" x2="-208.28" y2="66.04" width="0.1524" layer="91" grouprefs="TERMINATION"/>
+<wire x1="-208.28" y1="66.04" x2="-205.74" y2="66.04" width="0.1524" layer="91" grouprefs="TERMINATION"/>
+<wire x1="-208.28" y1="66.04" x2="-208.28" y2="60.96" width="0.1524" layer="91"/>
+<junction x="-208.28" y="66.04"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="PD1A" class="0">
 <segment>
@@ -23283,9 +23283,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="-195.58" y="93.98" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="TERMINATION"/>
 </segment>
 <segment>
-<pinref part="B2" gate="G$1" pin="AC1"/>
-<wire x1="-15.24" y1="38.1" x2="-27.94" y2="38.1" width="0.1524" layer="91" grouprefs="POWER_ROUTER"/>
-<label x="-27.94" y="38.1" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="POWER_ROUTER"/>
+<pinref part="B2" gate="G$1" pin="AC2"/>
+<wire x1="-15.24" y1="27.94" x2="-27.94" y2="27.94" width="0.1524" layer="91"/>
+<label x="-27.94" y="27.94" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PSE1B" class="0">
@@ -23302,9 +23302,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="-190.5" y="93.98" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="TERMINATION"/>
 </segment>
 <segment>
-<pinref part="B2" gate="G$1" pin="AC2"/>
-<wire x1="-15.24" y1="27.94" x2="-27.94" y2="27.94" width="0.1524" layer="91" grouprefs="POWER_ROUTER"/>
-<label x="-27.94" y="27.94" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="POWER_ROUTER"/>
+<pinref part="B2" gate="G$1" pin="AC1"/>
+<wire x1="-15.24" y1="38.1" x2="-27.94" y2="38.1" width="0.1524" layer="91"/>
+<label x="-27.94" y="38.1" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PD1B" class="0">
@@ -23349,9 +23349,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="-185.42" y="93.98" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="TERMINATION"/>
 </segment>
 <segment>
-<pinref part="B1" gate="G$1" pin="AC1"/>
-<wire x1="-15.24" y1="22.86" x2="-27.94" y2="22.86" width="0.1524" layer="91"/>
-<label x="-27.94" y="22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="B1" gate="G$1" pin="AC2"/>
+<wire x1="-15.24" y1="12.7" x2="-27.94" y2="12.7" width="0.1524" layer="91"/>
+<label x="-27.94" y="12.7" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PSE2B" class="0">
@@ -23368,9 +23368,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="-180.34" y="93.98" size="1.778" layer="95" rot="R90" xref="yes" grouprefs="TERMINATION"/>
 </segment>
 <segment>
-<pinref part="B1" gate="G$1" pin="AC2"/>
-<wire x1="-15.24" y1="12.7" x2="-27.94" y2="12.7" width="0.1524" layer="91"/>
-<label x="-27.94" y="12.7" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="B1" gate="G$1" pin="AC1"/>
+<wire x1="-15.24" y1="22.86" x2="-27.94" y2="22.86" width="0.1524" layer="91"/>
+<label x="-27.94" y="22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PD2B" class="0">
@@ -23385,20 +23385,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="-180.34" y1="55.88" x2="-180.34" y2="53.34" width="0.1524" layer="91" grouprefs="TERMINATION"/>
 <label x="-180.34" y="53.34" size="1.778" layer="95" rot="R270" xref="yes" grouprefs="TERMINATION"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="-205.74" y1="71.12" x2="-208.28" y2="71.12" width="0.1524" layer="91" grouprefs="TERMINATION"/>
-<wire x1="-208.28" y1="71.12" x2="-208.28" y2="68.58" width="0.1524" layer="91" grouprefs="TERMINATION"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="-208.28" y1="68.58" x2="-208.28" y2="66.04" width="0.1524" layer="91" grouprefs="TERMINATION"/>
-<wire x1="-208.28" y1="66.04" x2="-205.74" y2="66.04" width="0.1524" layer="91" grouprefs="TERMINATION"/>
-<wire x1="-208.28" y1="68.58" x2="-213.36" y2="68.58" width="0.1524" layer="91" grouprefs="TERMINATION"/>
-<junction x="-208.28" y="68.58" grouprefs="TERMINATION"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="-213.36" y1="68.58" x2="-213.36" y2="66.04" width="0.1524" layer="91" grouprefs="TERMINATION"/>
 </segment>
 </net>
 <net name="N$18" class="0">
