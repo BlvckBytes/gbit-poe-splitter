@@ -117,8 +117,8 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="6.35" x2="51.867" y2="6.223" width="0" layer="20"/>
-<wire x1="51.867" y1="6.223" x2="51.867" y2="48.377" width="0" layer="20"/>
+<wire x1="0" y1="6.35" x2="51.867" y2="6.35" width="0" layer="20"/>
+<wire x1="51.867" y1="6.35" x2="51.867" y2="48.377" width="0" layer="20"/>
 <wire x1="51.867" y1="48.377" x2="0" y2="48.504" width="0" layer="20"/>
 <wire x1="0" y1="48.504" x2="0" y2="6.35" width="0" layer="20"/>
 <text x="49.022" y="33.528" size="1.143" layer="16" font="vector" ratio="15" rot="MR270">BlvckBytes</text>
