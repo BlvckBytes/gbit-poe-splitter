@@ -2,11 +2,12 @@
 
 Power devices which don't support PoE and fine-adjust the received voltage at the same time. This equipment conforms to the *802.3at* standard, also known as *PoE+*.
 
-⚠️ This project is far from being done, and I'm just planning things out at this point in time.
+⚠️ Use at your own risk and always properly test the product before connecting expensive gear up to it!
 
 ## Table of Contents
 
 * [Goals](#goals)
+* [The Product](#the-product)
 * [Introduction](#introduction)
   * [802\.3af (PoE)](#8023af-poe)
   * [802\.3at (PoE\+)](#8023at-poe)
@@ -31,6 +32,12 @@ Power devices which don't support PoE and fine-adjust the received voltage at th
 * ✅ Indication of active type 2
 * ✅ DC Output Jack
 * ✅ Proper centertap-termination
+
+## The Product
+
+![Product View](img/product_view.png)
+
+![Bottom View](img/bottom_view.jpg)
 
 ## Introduction
 
@@ -94,7 +101,7 @@ After completing both steps successfully, power is activated.
 
 ### Status LEDs
 
-* Power available (Green)
+* Power available (Yellow)
 * Inrush current limiting (Yellow)
 * Type 2 active (Yellow)
 * Pair 1 & 2 hot (Red)
@@ -114,9 +121,8 @@ After completing both steps successfully, power is activated.
 | RJLSE4118101 | RJ45 8P8C Shielded | Mouser | 0.91€ | 2 | 1.82€ |
 | PRT-10811 | 5.5mm DC Jack | Mouser | 0.81€ | 1 | 0.81€ |
 | **Status LEDs** |
-| RC0603FR-071K91L | 1.91k Ohm 0603 | Mouser | 0.008€ | 5 | 0.032€ |
-| 150060GS75000 | LED Green 0603 | Mouser | 0.12€ | 1 | 0.12€ |
-| 150060GS75000 | LED Yellow 0603 | Mouser | 0.12€ | 2 | 0.24€ |
+| CRCW060310K0FKTC | 10k Ohm 0603 | Mouser | 0.022€ | 5 | 0.11€ |
+| 150060GS75000 | LED Yellow 0603 | Mouser | 0.12€ | 3 | 0.24€ |
 | 150060GS75000 | LED Red 0603 | Mouser | 0.12€ | 2 | 0.24€ |
 | **Filtering & Termination** |
 | RC0603FR-0775RL | 75 Ohm 0603 | Mouser | 0.006€ | 8 | 0.012€ |
@@ -129,8 +135,6 @@ After completing both steps successfully, power is activated.
 | ERJ-3EKF1370V | 137 Ohm 0603 | Mouser | 0.014€ | 2 | 0.014€ |
 | CR0603-FX-90R9ELF | 90.9 Ohm 0603 | Mouser | 0.013€ | 1 | 0.013€ |
 | CR0603-FX-63R4ELF | 63.4 Ohm 0603 | Mouser | 0.013€ | 1 | 0.013€ |
-| SX1100-A | Jumper Shunt | Mouser | 0.03€ | 1 | 0.03€ |
-| 54202-T0803AB01LF | Jumper Pins 2x5 | Mouser | 0.65€ | 1 | 0.65€ |
 | **R_DEN** |
 | RK73H1JTTDD2492F | 24.9k Ohm 0603 | Mouser | 0.01€ | 1 | 0.01€ |
 | **Miscellaneous** |
@@ -138,7 +142,7 @@ After completing both steps successfully, power is activated.
 | GS2M-LTP | Rectifier Diode | Mouser | 0.28€ | 2 | 0.56€ |
 | ACP 6-SMD 10K | SMD Trimmer | Reichelt AT | 0.30€ | 1 | 0.30€ |
 
-Current total: 13.97€, not **yet** including: PCB material
+Total: ~13€
 
 ## Prototyping
 
@@ -213,6 +217,6 @@ Everything else seems to be okay so far, just that with a small load of - for ex
 
 16.11.2021:
 
-After taking a short break from this project, I now fixed the issues within my layout and managed to squeeze things even tighter, shaving off a few more millimeters of length. The only thing I'm still ponder about is stable voltage regulation without a load.
+After taking a short break from this project, I now fixed the issues within my layout and managed to squeeze things even tighter, shaving off a few more millimeters of length. The voltage regulation also seems to work perfectly without a load, the previous potentiometer was melted from all the hot air I used on the board, and the input smoothing cap probably also added some further power detection possibilities for the PSE. All up and running now.
 
 ![Routed Board](img/routed_board_2.png)
